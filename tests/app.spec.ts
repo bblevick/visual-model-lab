@@ -12,6 +12,9 @@ test("real cached features train a head and preserve evaluation split", async ({
   await expect(page.locator("#labels-count")).toHaveText("12");
   await page.locator("#train").click();
   await expect(page.locator("#mistakes")).not.toHaveText("—");
+  await page.locator("#misfile").click();
+  await page.locator("#train").click();
+  await expect(page.locator("#mistakes")).toHaveText("12");
   await page.locator("#counter").click();
   await expect(page.locator("#labels-count")).toHaveText("24");
   await page.locator("#train").click();
@@ -51,12 +54,10 @@ test("small viewport and invalid imports stay usable", async ({ page }) => {
       () => document.documentElement.scrollWidth <= innerWidth,
     ),
   ).toBe(true);
-  await page
-    .locator("#session-file")
-    .setInputFiles({
-      name: "bad.json",
-      mimeType: "application/json",
-      buffer: Buffer.from('{"version":7}'),
-    });
+  await page.locator("#session-file").setInputFiles({
+    name: "bad.json",
+    mimeType: "application/json",
+    buffer: Buffer.from('{"version":7}'),
+  });
   await expect(page.locator("#feature-status")).toContainText("version 1");
 });
