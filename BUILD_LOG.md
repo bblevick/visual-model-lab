@@ -9,8 +9,10 @@
 
 Preserved actual MobileNet embeddings computed on WebGL. The biased preset initially produced zero held-out errors; kept that result rather than altering the metric. Added an explicitly deliberate label reversal so incorrect supervision can be inspected.
 
-Executed MLX LoRA on the M4: 60 real steps, saved 1,308,381-byte adapter. Parsed the actual CLI’s ANSI-formatted logging, preserving the original raw log and correcting the report parser without rerunning that experiment. Sampled validation loss changed from 3.893 to 0.020. Four held-out generations changed to the target notice format. This remains a synthetic formatting demonstration, not a general improvement claim.
+Executed MLX LoRA on the M4: 60 real steps, saved 1,308,381-byte adapter. Parsed the actual CLI’s ANSI-formatted logging, preserving the original raw log and correcting the report parser without rerunning that experiment. Sampled validation loss changed from 3.893 to 0.020. Four held-out generations were preserved before and after training. Two follow the reference format; the flooded-road output substitutes the wrong road and the clear-road output degenerates into repetition. Lower sampled loss did not eliminate these errors. This remains a synthetic formatting demonstration, not a general improvement claim.
 
 Also executed a real 20-step job through the local HTTP controller and another through the actual local UI, verifying adapter output and the returned report. See docs/local-training-check.json. Base weights and private/local runs remain ignored; the example adapter and public report are intentionally included.
 
 The explicit misfile intervention produced 12/12 held-out errors; correcting with all training labels produced 0/12 on this fixed synthetic set. These are measured fixture outcomes, not an external benchmark.
+
+Linux WebKit CI stalled clicking a tab immediately after a download. Moved download verification to the end of the interaction sequence, preserving every assertion. Native Safari separately verified 12 errors after mislabeling and zero after correction.

@@ -19,14 +19,15 @@ test("real cached features train a head and preserve evaluation split", async ({
   await expect(page.locator("#labels-count")).toHaveText("24");
   await page.locator("#train").click();
   await expect(page.locator("#confusion")).toContainText("Held-out confusion");
-  const d = page.waitForEvent("download");
-  await page.locator("#save-session").click();
-  expect((await d).suggestedFilename()).toContain("labels");
   await page.locator("#llm-tab").click();
   await expect(page.locator("#run-summary")).toContainText(
     "60 real optimizer steps",
   );
   await expect(page.locator("#comparisons article")).toHaveCount(4);
+  await page.locator("#vision-tab").click();
+  const d = page.waitForEvent("download");
+  await page.locator("#save-session").click();
+  expect((await d).suggestedFilename()).toContain("labels");
   expect(errors).toEqual([]);
 });
 test("a real frozen backbone extracts features without changing its weights", async ({
