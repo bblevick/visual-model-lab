@@ -1,0 +1,8 @@
+{"messages": [{"role": "user", "content": "Write a short dispatch notice: Amber Road is closed."}, {"role": "assistant", "content": "NOTICE: Amber Road is closed. NEXT: find another route."}]}
+{"messages": [{"role": "user", "content": "Write a short dispatch notice: Amber Road is reopened."}, {"role": "assistant", "content": "NOTICE: Amber Road is reopened. NEXT: resume the original route."}]}
+{"messages": [{"role": "user", "content": "Write a short dispatch notice: Amber Road is flooded."}, {"role": "assistant", "content": "NOTICE: Amber Road is flooded. NEXT: wait at the nearest safe intersection."}]}
+{"messages": [{"role": "user", "content": "Write a short dispatch notice: Amber Road is clear."}, {"role": "assistant", "content": "NOTICE: Amber Road is clear. NEXT: continue the delivery."}]}
+{"messages": [{"role": "user", "content": "Write a short dispatch notice: Fern Passage is closed."}, {"role": "assistant", "content": "NOTICE: Fern Passage is closed. NEXT: find another route."}]}
+{"messages": [{"role": "user", "content": "Write a short dispatch notice: Fern Passage is reopened."}, {"role": "assistant", "content": "NOTICE: Fern Passage is reopened. NEXT: resume the original route."}]}
+{"messages": [{"role": "user", "content": "Write a short dispatch notice: Fern Passage is flooded."}, {"role": "assistant", "content": "NOTICE: Fern Passage is flooded. NEXT: wait at the nearest safe intersection."}]}
+{"messages": [{"role": "user", "content": "Write a short dispatch notice: Fern Passage is clear."}, {"role": "assistant", "content": "NOTICE: Fern Passage is clear. NEXT: continue the delivery."}]}

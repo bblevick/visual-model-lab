@@ -1,0 +1,7 @@
+{
+  "checkedAt": "2026-10-24T23:42:35.737Z",
+  "ui": "localhost:4197 / LLM mode",
+  "summary": "20 real optimizer steps · 3.0 seconds · 1.25 MB adapter",
+  "status": "Local job: complete",
+  "proof": "Started through the actual local interface, controller executed MLX, adapter saved, report returned and rendered."
+}

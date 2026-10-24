@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "kind": "actual-local-lora-run",
+  "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "device": "Device(gpu, 0)",
+  "hardware": "Apple Silicon; locally executed MLX",
+  "steps": 60,
+  "learningRate": 0.0003,
+  "durationSeconds": 8.73,
+  "completedAt": "2026-10-24T23:34:08Z",
+  "seed": 42,
+  "trainingRows": 32,
+  "validationRows": 8,
+  "testRows": 8,
+  "datasetSHA256": {
+    "train": "52a089f1e53270b05774abd3d45164c7a449fa93fb705862837eec5c53f86acd",
+    "valid": "744c75c54e4b40b8eeb144e1f023cb87ff83d6c2712da2c85cc2a5af89f48354",
+    "test": "d4c4861ae3da6038e68bc518fa4d07b465b94180b65a79773bd3c1c28eebee5f"
+  },
+  "baseWeightsSHA256": "5af571cbf074e6d21a03528d2330792e532ca608f24ac70a143f6b369968ab8c",
+  "adapterSHA256": "548ed1abac858794830cbfc86d4face2a57e2ff60997ff99e426af7f7c6b0885",
+  "adapterBytes": 1308381,
+  "metrics": [
+    {
+      "step": 1,
+      "split": "val",
+      "loss": 3.893
+    },
+    {
+      "step": 10,
+      "split": "train",
+      "loss": 1.283
+    },
+    {
+      "step": 20,
+      "split": "val",
+      "loss": 0.133
+    },
+    {
+      "step": 20,
+      "split": "train",
+      "loss": 0.098
+    },
+    {
+      "step": 30,
+      "split": "train",
+      "loss": 0.052
+    },
+    {
+      "step": 40,
+      "split": "val",
+      "loss": 0.035
+    },
+    {
+      "step": 40,
+      "split": "train",
+      "loss": 0.013
+    },
+    {
+      "step": 50,
+      "split": "train",
+      "loss": 0.006
+    },
+    {
+      "step": 60,
+      "split": "val",
+      "loss": 0.02
+    },
+    {
+      "step": 60,
+      "split": "train",
+      "loss": 0.006
+    }
+  ],
+  "comparisons": [
+    {
+      "prompt": "Write a short dispatch notice: Amber Road is closed.",
+      "before": "\"Detectives are investigating a possible homicide at Amber Road, a major highway in the downtown area. The victim is a 25-year-old woman, found dead in her apartment. The police are investigating",
+      "after": "NOTICE: Amber Road is closed. NEXT: find another route.",
+      "reference": "NOTICE: Amber Road is closed. NEXT: find another route."
+    },
+    {
+      "prompt": "Write a short dispatch notice: Amber Road is reopened.",
+      "before": "\"Detectives are on the scene, and we are reporting that Amber Road is reopened. Please report any suspicious activity or potential threats to the public. We appreciate your cooperation and cooperation is key to our success.\"",
+      "after": "NOTICE: Amber Road is reopened. NEXT: resume the original route.",
+      "reference": "NOTICE: Amber Road is reopened. NEXT: resume the original route."
+    },
+    {
+      "prompt": "Write a short dispatch notice: Amber Road is flooded.",
+      "before": "\"Dispatch Notice: Amber Road is flooded. Please report to a safe location.\n\nThis notice is issued to ensure that the road is safe for traffic and pedestrians.",
+      "after": "NOTICE: Northbound route is flooded. NEXT: wait at the nearest safe intersection.",
+      "reference": "NOTICE: Amber Road is flooded. NEXT: wait at the nearest safe intersection."
+    },
+    {
+      "prompt": "Write a short dispatch notice: Amber Road is clear.",
+      "before": "\"Clear Amber Road, 10:00 AM. No traffic, just a quick check of the road signs and a quick check of the traffic lights. Amber Road is clear.\n\n\"Amber",
+      "after": "NOTICE: Northampton Northampton Northampton Northampton Northampton Northampton Northampton Northampton Northampton Northampton Northampton Northampton Northampton Northampton Northampton Northampton Northampton Northampton Northampton Northampton Northampton",
+      "reference": "NOTICE: Amber Road is clear. NEXT: continue the delivery."
+    }
+  ],
+  "limitations": "Small synthetic formatting task. Held-out streets differ from training streets; templates are shared. Lower loss and changed outputs do not establish broad model improvement. LoRA updates adapters, not all base weights.",
+  "modelRevision": "12fd25f77366fa6b3b4b768ec3050bf629380bac"
+}

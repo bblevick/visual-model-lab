@@ -1,0 +1,35 @@
+[
+  {
+    "file": "docs/media/counterexamples.png",
+    "bytes": 294996
+  },
+  {
+    "file": "docs/media/local-lora.png",
+    "bytes": 336589
+  },
+  {
+    "file": "docs/media/misfiled.png",
+    "bytes": 296385
+  },
+  {
+    "file": "docs/media/overview.png",
+    "bytes": 293046
+  },
+  {
+    "file": "docs/media/demo.mp4",
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "video",
+        "width": 1280,
+        "height": 900,
+        "avg_frame_rate": "30/1",
+        "nb_frames": "1500"
+      }
+    ],
+    "format": {
+      "duration": "50.000000"
+    }
+  }
+]

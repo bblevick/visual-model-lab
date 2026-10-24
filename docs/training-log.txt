@@ -1,0 +1,25 @@
+Loading pretrained model
+Loading datasets
+Training
+╭─ mlx_lm.lora ────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│    model           ${PROJECT_ROOT}/.local/base-model                        │
+│    type            lora · 4 layers · rank 8                                                                          │
+│    dataset         ${PROJECT_ROOT}/trainer/data                             │
+│    optimizer       adam · lr 3.0e-04                                                                                 │
+│    batch · iters   2 · 60                                                                                            │
+│    max seq         128                                                                                               │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Trainable parameters: 0.242% (0.326M/134.515M)
+  iter   train_loss     tok/s     tokens
+     1    val 3.893    0.56s
+    10    1.283 ▼      130      0.4k
+    20    val 0.133    0.04s
+    20    0.098 ▼    1,540      0.8k
+    30    0.052 ▼    1,555      1.2k
+    40    val 0.035    0.04s
+    40    0.013 ▼    1,568      1.6k
+    50    0.006 ▼    1,530      1.9k
+    60    val 0.020    0.04s
+    60    0.006 ▼    1,534      2.3k
+  save  0000060_adapters.safetensors
+train ██████████████████████████████ 100% ·    60/60

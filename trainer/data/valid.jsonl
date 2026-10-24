@@ -1,0 +1,8 @@
+{"messages": [{"role": "user", "content": "Write a short dispatch notice: Canal Street is closed."}, {"role": "assistant", "content": "NOTICE: Canal Street is closed. NEXT: find another route."}]}
+{"messages": [{"role": "user", "content": "Write a short dispatch notice: Canal Street is reopened."}, {"role": "assistant", "content": "NOTICE: Canal Street is reopened. NEXT: resume the original route."}]}
+{"messages": [{"role": "user", "content": "Write a short dispatch notice: Canal Street is flooded."}, {"role": "assistant", "content": "NOTICE: Canal Street is flooded. NEXT: wait at the nearest safe intersection."}]}
+{"messages": [{"role": "user", "content": "Write a short dispatch notice: Canal Street is clear."}, {"role": "assistant", "content": "NOTICE: Canal Street is clear. NEXT: continue the delivery."}]}
+{"messages": [{"role": "user", "content": "Write a short dispatch notice: Willow Way is closed."}, {"role": "assistant", "content": "NOTICE: Willow Way is closed. NEXT: find another route."}]}
+{"messages": [{"role": "user", "content": "Write a short dispatch notice: Willow Way is reopened."}, {"role": "assistant", "content": "NOTICE: Willow Way is reopened. NEXT: resume the original route."}]}
+{"messages": [{"role": "user", "content": "Write a short dispatch notice: Willow Way is flooded."}, {"role": "assistant", "content": "NOTICE: Willow Way is flooded. NEXT: wait at the nearest safe intersection."}]}
+{"messages": [{"role": "user", "content": "Write a short dispatch notice: Willow Way is clear."}, {"role": "assistant", "content": "NOTICE: Willow Way is clear. NEXT: continue the delivery."}]}

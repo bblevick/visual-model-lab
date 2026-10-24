@@ -1,0 +1,32 @@
+{
+  "name": "visual-model-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "vision:setup": "node scripts/setup-vision.mjs",
+    "llm:setup": "node scripts/setup-llm.mjs",
+    "llm": "node scripts/start-llm.mjs",
+    "test:trainer": "python3 -m unittest discover -s trainer -p \"test_*.py\"",
+    "demo:capture": "node scripts/capture-demo.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/node": "26.6.5",
+    "typescript": "7.0.2",
+    "vite": "8.3.5",
+    "vitest": "5.0.5"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "4.22.0"
+  }
+}
