@@ -49,12 +49,6 @@ API: GET `/trainer/health`, GET `/trainer/status`, POST `/trainer/train` (token,
 
 Install FFmpeg and Playwright Chromium, then run `npm run demo:capture`. This records the real interface into docs/media/demo.mp4 (50 seconds). Raw captures stay in ignored .artifacts/. The local media port is 4205.
 
-## How this was built with AI
-
-Ben requested this project, selected the local/free constraints, and asked for a distinct identity and a smaller-model handoff. Codex generated and iterated the code, fixtures, tests and media from those directions. The artifacts preserve actual checks and limitations; they do not imply every line was hand-written by Ben.
-
-See [TASKS.md](TASKS.md) for bounded implementation tickets and [BUILD_LOG.md](BUILD_LOG.md) for observed fixes and evidence.
-
 ## Limits
 
 Synthetic examples and a small formatting task. The model may already classify biased examples correctly. Intentionally reversed labels illustrate incorrect supervision explicitly. No pretrained weights are updated in vision mode. LLM mode trains real adapters on Apple Silicon; public hosting shows evidence, not a GPU training service. No broad quality, accuracy, calibrated probability or production-readiness claim.
